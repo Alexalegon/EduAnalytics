@@ -1,0 +1,101 @@
+﻿Name,Age,Gender,US Educated,Years of Experience,Subject,Teacher Rating
+Teacher 1,30 to 50,male,No,3 to 6,Physics,proficient
+Teacher 2,30 to 50,male,Yes,3 to 6,Spanish,proficient
+Teacher 3,more than 50,female,No,more than 6,Physics,unsatisfactory
+Teacher 4,less than 30,male,No,3 to 6,English,proficient
+Teacher 5,less than 30,male,No,3 to 6,English,satisfactory
+Teacher 6,30 to 50,male,Yes,3 to 6,Music,proficient
+Teacher 7,less than 30,female,Yes,more than 6,Biology,proficient
+Teacher 8,more than 50,male,Yes,less than 3,History,satisfactory
+Teacher 9,less than 30,female,Yes,less than 3,Physics,unsatisfactory
+Teacher 10,30 to 50,female,No,more than 6,Computer Science,proficient
+Teacher 11,less than 30,female,Yes,more than 6,Music,satisfactory
+Teacher 12,30 to 50,male,No,more than 6,Chemistry,satisfactory
+Teacher 13,30 to 50,female,No,more than 6,History,proficient
+Teacher 14,less than 30,female,Yes,3 to 6,History,unsatisfactory
+Teacher 15,more than 50,male,Yes,less than 3,History,proficient
+Teacher 16,less than 30,female,Yes,more than 6,Physics,satisfactory
+Teacher 17,30 to 50,male,Yes,3 to 6,Music,proficient
+Teacher 18,more than 50,female,No,more than 6,Physical Education,unsatisfactory
+Teacher 19,30 to 50,female,No,more than 6,Geography,proficient
+Teacher 20,more than 50,female,Yes,3 to 6,Biology,satisfactory
+Teacher 21,30 to 50,male,Yes,less than 3,Geography,unsatisfactory
+Teacher 22,30 to 50,male,Yes,less than 3,Physics,proficient
+Teacher 23,less than 30,female,No,more than 6,Biology,unsatisfactory
+Teacher 24,more than 50,female,Yes,3 to 6,Physics,proficient
+Teacher 25,less than 30,female,Yes,less than 3,Mathematics,proficient
+Teacher 26,30 to 50,male,No,more than 6,Chemistry,proficient
+Teacher 27,less than 30,male,Yes,less than 3,Physics,satisfactory
+Teacher 28,more than 50,male,No,more than 6,Computer Science,proficient
+Teacher 29,30 to 50,female,Yes,more than 6,English,proficient
+Teacher 30,30 to 50,male,No,3 to 6,Biology,unsatisfactory
+Teacher 31,less than 30,female,Yes,more than 6,Art,satisfactory
+Teacher 32,30 to 50,female,No,less than 3,Geography,unsatisfactory
+Teacher 33,30 to 50,male,No,more than 6,Geography,proficient
+Teacher 34,less than 30,female,No,more than 6,Geography,unsatisfactory
+Teacher 35,more than 50,female,Yes,less than 3,Spanish,unsatisfactory
+Teacher 36,more than 50,female,Yes,more than 6,Art,unsatisfactory
+Teacher 37,less than 30,female,Yes,3 to 6,Music,unsatisfactory
+Teacher 38,30 to 50,female,No,more than 6,Mathematics,unsatisfactory
+Teacher 39,less than 30,male,Yes,more than 6,Computer Science,proficient
+Teacher 40,less than 30,female,No,more than 6,Physical Education,satisfactory
+Teacher 41,less than 30,female,Yes,more than 6,Physical Education,unsatisfactory
+Teacher 42,30 to 50,male,No,3 to 6,French,unsatisfactory
+Teacher 43,30 to 50,male,Yes,more than 6,French,satisfactory
+Teacher 44,more than 50,male,No,3 to 6,Physics,satisfactory
+Teacher 45,more than 50,female,Yes,more than 6,Geography,unsatisfactory
+Teacher 46,more than 50,female,No,3 to 6,Mathematics,satisfactory
+Teacher 47,30 to 50,female,Yes,3 to 6,Music,unsatisfactory
+Teacher 48,more than 50,female,No,more than 6,Art,unsatisfactory
+Teacher 49,more than 50,male,Yes,more than 6,Music,satisfactory
+Teacher 50,30 to 50,male,No,less than 3,Mathematics,proficient
+Teacher 51,less than 30,male,Yes,3 to 6,Geography,satisfactory
+Teacher 52,30 to 50,female,Yes,3 to 6,Physical Education,proficient
+Teacher 53,30 to 50,female,No,3 to 6,Art,proficient
+Teacher 54,more than 50,female,No,more than 6,History,unsatisfactory
+Teacher 55,30 to 50,male,No,less than 3,Physics,satisfactory
+Teacher 56,more than 50,male,Yes,more than 6,French,satisfactory
+Teacher 57,less than 30,female,No,less than 3,Computer Science,satisfactory
+Teacher 58,more than 50,male,No,more than 6,Mathematics,unsatisfactory
+Teacher 59,more than 50,male,No,3 to 6,Physics,proficient
+Teacher 60,more than 50,male,Yes,more than 6,Mathematics,unsatisfactory
+Teacher 61,30 to 50,male,No,more than 6,English,satisfactory
+Teacher 62,more than 50,female,No,more than 6,Biology,proficient
+Teacher 63,more than 50,female,Yes,more than 6,Computer Science,satisfactory
+Teacher 64,30 to 50,female,Yes,3 to 6,Mathematics,unsatisfactory
+Teacher 65,30 to 50,male,Yes,3 to 6,French,unsatisfactory
+Teacher 66,30 to 50,female,No,less than 3,Chemistry,proficient
+Teacher 67,more than 50,female,No,3 to 6,Mathematics,proficient
+Teacher 68,30 to 50,male,No,3 to 6,Spanish,satisfactory
+Teacher 69,30 to 50,male,Yes,more than 6,Spanish,proficient
+Teacher 70,30 to 50,male,Yes,more than 6,French,proficient
+Teacher 71,more than 50,female,No,more than 6,Biology,proficient
+Teacher 72,less than 30,male,No,less than 3,Spanish,satisfactory
+Teacher 73,less than 30,male,Yes,more than 6,Art,proficient
+Teacher 74,more than 50,female,No,more than 6,Music,proficient
+Teacher 75,30 to 50,male,Yes,less than 3,French,unsatisfactory
+Teacher 76,more than 50,male,No,less than 3,Geography,proficient
+Teacher 77,less than 30,female,Yes,3 to 6,Mathematics,unsatisfactory
+Teacher 78,less than 30,female,No,less than 3,Geography,satisfactory
+Teacher 79,more than 50,female,Yes,3 to 6,Biology,satisfactory
+Teacher 80,less than 30,female,No,more than 6,Chemistry,proficient
+Teacher 81,less than 30,female,No,3 to 6,Geography,satisfactory
+Teacher 82,30 to 50,female,No,more than 6,English,unsatisfactory
+Teacher 83,less than 30,female,No,3 to 6,Physical Education,unsatisfactory
+Teacher 84,more than 50,male,Yes,more than 6,Geography,unsatisfactory
+Teacher 85,less than 30,male,Yes,less than 3,Geography,unsatisfactory
+Teacher 86,more than 50,female,Yes,more than 6,Geography,unsatisfactory
+Teacher 87,30 to 50,female,Yes,more than 6,Art,proficient
+Teacher 88,more than 50,male,Yes,less than 3,French,proficient
+Teacher 89,less than 30,female,No,more than 6,Mathematics,unsatisfactory
+Teacher 90,more than 50,female,No,3 to 6,History,unsatisfactory
+Teacher 91,less than 30,male,No,less than 3,Geography,unsatisfactory
+Teacher 92,less than 30,female,Yes,3 to 6,Mathematics,unsatisfactory
+Teacher 93,less than 30,female,Yes,less than 3,Biology,proficient
+Teacher 94,more than 50,male,Yes,less than 3,Art,proficient
+Teacher 95,more than 50,male,Yes,more than 6,Art,proficient
+Teacher 96,more than 50,female,Yes,3 to 6,Physical Education,satisfactory
+Teacher 97,less than 30,female,Yes,3 to 6,Biology,proficient
+Teacher 98,less than 30,male,No,more than 6,Computer Science,unsatisfactory
+Teacher 99,30 to 50,male,Yes,more than 6,History,satisfactory
+Teacher 100,30 to 50,female,Yes,more than 6,English,proficient
