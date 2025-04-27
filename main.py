@@ -1,5 +1,5 @@
 from ManageTeacher import ManageTeacher;
-
+from TeacherAnalytics import TeacherAnalytics
 
 # my_package/my_class.py
 class UI:
@@ -35,9 +35,12 @@ class UI:
                     raise ValueError
                 elif role == 1:
                      manageTeacher = ManageTeacher()
-                     manageTeacher.addTeachers(input("Enter filename: "))
+                     fname = input("Enter file name: \n")
+                     manageTeacher.addTeachers(fname)
                 elif role == 2:
-                    print()
+                    trainingTchr = input("Enter training data file name:\n")
+                    testingTchr = input("Enter testing data file name:\n")
+                    tchrAnalytics = TeacherAnalytics(trainingTchr,testingTchr)
                 elif role == 3:
                     print()
                 # If the input is successfully converted to an integer, break out of the loop
