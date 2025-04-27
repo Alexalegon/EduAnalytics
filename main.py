@@ -2,6 +2,7 @@ from ManageTeacher import ManageTeacher;
 from TeacherAnalytics import TeacherAnalytics
 from TeacherReport import TeacherReport
 from StudentReport import StudentReport
+from ManageStudent import ManageStudent
 import os
 # my_package/my_class.py
 class UI:
@@ -31,7 +32,7 @@ class UI:
     def __adminUI(self):
         while True:
             try:
-                task = int(input("Admin Dashboard:\n1 Add Teacher Data\n2 Teacher Analytics \n"))
+                task = int(input('Admin Dashboard:\n1 Add Teacher Data\n2 Add Student Data\n3 Teacher Analytics \n'))
 
                 if task == 1:
                      manageTeacher = ManageTeacher()
@@ -39,7 +40,15 @@ class UI:
                      if os.path.exists(fname):
                         manageTeacher.addTeachers(fname)
                      else: raise NameError
+
                 elif task == 2:
+                     manageStudent = ManageStudent()
+                     fname = input("Enter file name: \n")
+                     if os.path.exists(fname):
+                        manageStudent.addStudents(fname)
+                     else: raise NameError
+
+                elif task == 3:
                     trainingTchr = input("Enter training data file name:\n")
                     if os.path.exists(trainingTchr):
                         testingTchr = input("Enter testing data file name:\n")
