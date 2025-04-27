@@ -12,8 +12,9 @@ class ManageTeacher:
         for index, row in self.df.iterrows():
             teacher = Teacher(row)
             self.teacherList.append(teacher)
+        print("Succesfully added teacher data!")
 
-    def removeTeacher(self,name):
+    """ def removeTeacher(self,name):
         for item in self.teacherList:
             if item.name == name:
-                self.teacherList.remove(item)
+                self.teacherList.remove(item) """

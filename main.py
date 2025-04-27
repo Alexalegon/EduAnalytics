@@ -1,6 +1,8 @@
 from ManageTeacher import ManageTeacher;
 from TeacherAnalytics import TeacherAnalytics
-
+from TeacherReport import TeacherReport
+from StudentReport import StudentReport
+import os
 # my_package/my_class.py
 class UI:
     def __init__(self):
@@ -9,7 +11,7 @@ class UI:
     # def login():
 
     def displayMenu(self):
-        print("Welcome Menu")
+        print("Education Analytics Menu\nPlease Follow the Instructions on the Screen\n")
         while True:
             try:
                 role = int(input("Press the following for login:\n1 for Admin\n2 for Teacher\n3 for Student\n"))
@@ -17,7 +19,7 @@ class UI:
                 if role == 1:
                     self.__adminUI()
                 elif role == 2:
-                    self.teacherUI()
+                    self.__teacherUI()
                 elif role == 3:
                     self.__studentUI()
                 else: raise ValueError
@@ -29,27 +31,55 @@ class UI:
     def __adminUI(self):
         while True:
             try:
-                role = int(input("Admin Dashboard:\n1 Add Teacher Data\n2 Teacher Analytics \n"))
+                task = int(input("Admin Dashboard:\n1 Add Teacher Data\n2 Teacher Analytics \n"))
 
-                if role == 1:
+                if task == 1:
                      manageTeacher = ManageTeacher()
                      fname = input("Enter file name: \n")
-                     manageTeacher.addTeachers(fname)
-                elif role == 2:
+                     if os.path.exists(fname):
+                        manageTeacher.addTeachers(fname)
+                     else: raise NameError
+                elif task == 2:
                     trainingTchr = input("Enter training data file name:\n")
-                    testingTchr = input("Enter testing data file name:\n")
-                    tchrAnalytics = TeacherAnalytics(trainingTchr,testingTchr)
+                    if os.path.exists(trainingTchr):
+                        testingTchr = input("Enter testing data file name:\n")
+                        if os.path.exists(testingTchr):
+                            tchrAnalytics = TeacherAnalytics(trainingTchr,testingTchr)
+                        else: raise NameError
+                    else: raise NameError
+                    
                 else: raise ValueError
                 # break out of the loop
                 break
             except ValueError:
                 print("Invalid input. Please enter 1 or 2 or 3.\n")
+            except NameError:
+                print("File does not exist, returning to Menu")
 
     def __teacherUI(self):
-        print()
-
+        while True:
+            try:
+                task = int(input("Teacher Dashboard:\n1 View Report\n"))
+                if task == 1:
+                    id = int(input("Enter id: \n"))
+                    teacherReport = TeacherReport(id)
+                else:
+                    raise ValueError
+                break
+            except ValueError:
+                print("Invalid input. Please enter 1\n")
+    
     def __studentUI(self):
-        print()
+        while True:
+            try:
+                task = int(input("Student Dashboard:\n1 View Report\n"))
+                if task == 1:
+                    id = int(input("Enter id: \n"))
+                    studentReport = StudentReport(id)
+                else: raise ValueError
+                break
+            except ValueError:
+                print("Invalid input. Please enter 1 or 2\n")  
 
 
 if __name__ == "__main__":

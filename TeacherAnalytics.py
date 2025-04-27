@@ -10,7 +10,7 @@ class TeacherAnalytics(Analytics):
         # read data and convert to panda data frame
         self.df = pd.read_csv(trainingFname, sep=',', na_values=['?'])
         self.df_test = pd.read_csv(testingFname, sep=",", na_values=['?'])
-        self.featureList = ['Age','Gender','US Educated','Years of Experience']
+        self.featureList = ['Age','Gender','US Educated','Years Experience']
         self.preprocessDf()
         self.labelEncode()
         self.runAnalytics()
@@ -33,8 +33,8 @@ class TeacherAnalytics(Analytics):
         self.df['Gender']= label_encoder.fit_transform(self.df['Gender'])
         self.df['Gender'].unique()
 
-        self.df['Years of Experience']= label_encoder.fit_transform(self.df['Years of Experience'])
-        self.df['Years of Experience'].unique()
+        self.df['Years Experience']= label_encoder.fit_transform(self.df['Years Experience'])
+        self.df['Years Experience'].unique()
 
         self.df['Teacher Rating']= label_encoder.fit_transform(self.df['Teacher Rating'])
         self.df['Teacher Rating'].unique()
@@ -49,8 +49,8 @@ class TeacherAnalytics(Analytics):
         self.df_test['Gender']= label_encoder.fit_transform(self.df_test['Gender'])
         self.df_test['Gender'].unique()
 
-        self.df_test['Years of Experience']= label_encoder.fit_transform(self.df_test['Years of Experience'])
-        self.df_test['Years of Experience'].unique()
+        self.df_test['Years Experience']= label_encoder.fit_transform(self.df_test['Years Experience'])
+        self.df_test['Years Experience'].unique()
         
 
         self.df_test['Teacher Rating']= label_encoder.fit_transform(self.df_test['Teacher Rating'])
