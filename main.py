@@ -3,15 +3,17 @@ from TeacherAnalytics import TeacherAnalytics
 from TeacherReport import TeacherReport
 from StudentReport import StudentReport
 from ManageStudent import ManageStudent
-import os
-# my_package/my_class.py
+import os,sys
+
 class UI:
     def __init__(self):
         print()
 
 
     def displayMenu(self):
-        print("Education Analytics Menu\nPlease Follow the Instructions on the Screen\n")
+    
+        print("Education Analytics Menu\nPlease Follow the Instructions on the Screen\n" \
+        "Press ctr+c to terminate program")
         while True:
             try:
                 role = int(input("Press the following for login:\n1 for Admin\n2 for Teacher\n3 for Student\n"))
@@ -63,7 +65,7 @@ class UI:
                 # break out of the loop
                 break
             except ValueError:
-                print("Invalid input. Please enter 1 or 2 or 3.\n")
+                 print("Invalid input. Please enter 1 or 2 or 3.\n")
             except NameError:
                 print("File does not exist, returning to Menu")
 
@@ -91,6 +93,7 @@ class UI:
                 break
             except ValueError:
                 print("Invalid input. Please enter 1 or 2\n")  
+
 
 
 if __name__ == "__main__":
