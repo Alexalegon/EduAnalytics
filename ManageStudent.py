@@ -6,10 +6,12 @@ class ManageStudent:
     def __init__(self):
         self.studentsList = []
 
-    def addStudents(self,fname):
+    def addStudents(self,demographFile,performFile):
         # read data and convert to panda data frame
-        self.df = pd.read_csv(fname, sep=',', na_values=['?'])
-        for index, row in self.df.iterrows():
+        self.df = pd.read_csv(demographFile, sep=',', na_values=['?'])
+        self.df1 = pd.read_csv(performFile, sep=',', na_values=['?'])
+        self.merged_df = pd.merge(self.df, self.df1, on='Name')
+        for index, row in self.merged_df.iterrows():
             student = Student(row)
             self.studentsList.append(student)
         print("Succesfully added student data!")

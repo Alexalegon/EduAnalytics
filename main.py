@@ -43,9 +43,12 @@ class UI:
 
                 elif task == 2:
                      manageStudent = ManageStudent()
-                     fname = input("Enter file name: \n")
+                     fname = input("Enter file name for demographic data: \n")
                      if os.path.exists(fname):
-                        manageStudent.addStudents(fname)
+                        fname1 = input("Enter file name for peformance data\n")
+                        if os.path.exists(fname1):
+                            manageStudent.addStudents(fname,fname1)
+                        else: raise NameError
                      else: raise NameError
 
                 elif task == 3:
