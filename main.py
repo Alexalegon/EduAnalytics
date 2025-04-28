@@ -9,7 +9,6 @@ class UI:
     def __init__(self):
         print()
 
-    # def login():
 
     def displayMenu(self):
         print("Education Analytics Menu\nPlease Follow the Instructions on the Screen\n")
